@@ -7,7 +7,7 @@ const openai = new OpenAI({
 
 export const callAi = async () => {
     const response = await openai.chat.completions.create({
-        model: "gemini-2.0-flash",
+        model: "gemini-2.0-flash-lite",
         messages: [
             { role: "system", content: "You are a helpful assistant." },
             {
